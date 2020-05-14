@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <link rel="stylesheet" href="static/css/style.css" type="text/css">
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js"></script>
+    <meta charset="UTF-8">
+    <title>News Home</title>
+    <script type="text/javascript" src="static/javascript/base.js"></script>
+</head>
+<!-- OnLoad, call XMLHttpRequest() -->
+<body>
+<!-- Main Container, consists of page divided into divs -->
+<div class="container">
+    <!-- Left Sub-portion/div used to create buttons -->
+    <div class="left">
+        <div class="btn-placeGN">
+            <button class="buttonNews" id="gnews-btn">Google News</button>
+        </div>
+        <div class="btn-placeS">
+            <button class="buttonSearch" id="src-btn">Search</button>
+        </div>
+    </div>
+    <!-- Middle div used to display news Slider, Word Cloud and Head Lines -->
+    <div class="middle" id="middle-seg">
+        <!-- News Slider and Word Cloud -->
+        <div id="right-top" style="background-color:white;height:200px;margin-top:7px;position:relative;border-radius:0px;"><br>
+            <!-- 2 Divs, one floating next to another -->
+            <!-- Slider -->
+            <div class="slider-left">
+                <a href="" id="news-link" target="_blank"><span class="span-link"></span></a>
+                <img name="slider" style="height:100%;width:100%;" src="">
+                    <div class="textImg">
+                        <h1 id="headline"></h1>
+                        <p id="headline-description"></p>
+                    </div>
+            </div>
+            <!-- Word Cloud -->
+            <div id="word-cloud">
+
+            </div>
+        </div>
+        <!-- Main Headlines: CNN, Fox-News -->
+
+        <div id="right-bottom" style="margin-bottom:7px;">
+            <!-- Insert Main Headlines here -->
+            <h1 style="text-align:center;margin-bottom:0px;">CNN</h1>
+            <hr class="dottedLine">
+            <div class="cards" id="cnn-news">
+                <!-- CNN NEWS -->
+            </div>
+            <!-- Fox News -->
+            <h1 style="text-align:center;margin-bottom:0px;">Fox News</h1>
+            <hr class="dottedLine">
+            <div class="cards" id="fox-news">
+
+            </div>
+
+        </div>
+    </div>
+    <!-- Empty Div on the right -->
+    <div class="right-space">
+        <div style="background-color:white;height:200px;margin-top:7px"><br></div>
+    </div>
+<!--    <div class="bottom" id="bottom_id"></div> -->
+</div>
+</body>
+</html>
